@@ -1,7 +1,6 @@
-%%%%%%%%%%%%%%%%%
 % Parser implementation (no DCG)
 % Grammar (start symbol: Lines)
-%
+
 % Lines -> Line ; Lines | Line
 % Line  -> Num , Line | Num
 % Num   -> Digit | Digit Num
@@ -40,21 +39,7 @@ digit([D|Rest], Rest) :-
 % Example execution:
 % ?- parse(['3', '2', ',', '0', ';', '1', ',', '5', '6', '7', ';', '2']).
 % true.
-% ?- parse(['3', '2', ',', '0', ';', '1', ',', '5', '6', '7', ';', '2', ',']).
-% false.
-% ?- parse(['3', '2', ',', ';', '0']).
-% false.
-
-%%%%%%%%%%%%%%%%%
-% Your code here:
-%%%%%%%%%%%%%%%%%
-
-parse(X) :- ????
-
-% Example execution:
-% ?- parse(['3', '2', ',', '0', ';', '1', ',', '5', '6', '7', ';', '2']).
-% true.
-% ?- parse(['3', '2', ',', '0', ';', '1', ',', '5', '6', '7', ';', '2', ',']).
+% ?- parse(['3', '2', ',', '0', ';', '1', ',', '5', 6', '7', ';', '2', ',']).
 % false.
 % ?- parse(['3', '2', ',', ';', '0']).
 % false.
